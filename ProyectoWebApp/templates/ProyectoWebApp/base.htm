@@ -19,8 +19,7 @@
 
 <body>
 
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-
+    <h1 class="site-heading text-center text-white d-none d-lg-block" style="color:goldenrod!important;">
         <span class="site-heading-lower">V.I.P. Peluquer&iacute;a</span>
     </h1>
 
@@ -36,6 +35,9 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item {%if request.path == '/' %} active {% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Inicio</a>
+                    </li>
+                    <li class="nav-item {%if request.path == '/profesionales/' %} active {% endif %} px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="{% url 'Profesionales' %}">Profesionales</a>
                     </li>
                     <li class="nav-item {%if request.path == '/servicios/' %} active {% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'Servicios' %}">Servicios</a>

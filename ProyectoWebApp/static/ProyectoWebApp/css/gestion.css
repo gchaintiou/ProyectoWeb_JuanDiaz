@@ -283,3 +283,12 @@ div.ingresodatos {
 .linksCategorias:hover {
     text-decoration: none
 }
+
+.linksTrabajos {
+    color: goldenrod !important;
+    text-decoration: underline;
+}
+
+.linksTrabajos:hover {
+    text-decoration: none
+}
